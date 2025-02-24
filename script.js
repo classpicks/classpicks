@@ -1,6 +1,6 @@
 // Load users from localStorage (or predefined)
 let users = JSON.parse(localStorage.getItem("users")) || {
-    "user1": "password123",
+    "tanush": "221807",
     "admin": "adminpass"
 };
 
