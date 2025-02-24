@@ -5,6 +5,7 @@ let users = JSON.parse(localStorage.getItem("users")) || {
 };
 
 // Save users back to localStorage
+localStorage.removeItem("users"); // ✅ Clears stored users before resetting
 localStorage.setItem("users", JSON.stringify(users));
 
 // Login function
