@@ -1,11 +1,12 @@
 // Load users from localStorage (or predefined)
+localStorage.removeItem("users"); // ✅ Clears stored users before resetting
 let users = JSON.parse(localStorage.getItem("users")) || {
     "tanush": "221807",
     "admin": "adminpass"
 };
 
 // Save users back to localStorage
-localStorage.removeItem("users"); // ✅ Clears stored users before resetting
+
 localStorage.setItem("users", JSON.stringify(users));
 
 // Login function
